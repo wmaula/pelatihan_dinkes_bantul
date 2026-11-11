@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pelatihan Tableau Dinkes Bantul</title>
+<meta name="description" content="Materi pelatihan analisis dan visualisasi data surveilans dengan Tableau Public, Dinas Kesehatan Kabupaten Bantul.">
+<style>
+  :root {
+    --navy: #0D436B;
+    --ink: #032539;
+    --teal: #05778B;
+    --amber: #CD7200;
+    --pale: #C6DDE2;
+    --bg: #F7FAFB;
+    --card: #FFFFFF;
+    --muted: #4F6573;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+  }
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 48px 16px 40px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  header .eyebrow {
+    color: var(--pale);
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  header h1 { margin: 0 0 12px; font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.2; }
+  header p { margin: 0; color: #E3EEF1; max-width: 640px; }
+  main { padding: 32px 0 48px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  a.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid #DCE7EA;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  a.card:hover, a.card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(13, 67, 107, 0.12);
+    border-color: var(--teal);
+    outline: none;
+  }
+  .num {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: grid; place-items: center;
+    font-weight: 700; color: #fff; background: var(--teal);
+  }
+  .card.data .num { background: var(--amber); }
+  .card h2 { margin: 8px 0 0; font-size: 1.15rem; color: var(--navy); }
+  .card p { margin: 0; color: var(--muted); font-size: 0.95rem; flex: 1; }
+  .btn {
+    margin-top: 12px;
+    align-self: flex-start;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .card.data .btn { background: var(--amber); }
+  .note {
+    margin-top: 28px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: #FFF7EC;
+    border: 1px solid #F1D3A8;
+    font-size: 0.95rem;
+  }
+  .note strong { color: var(--amber); }
+  footer { color: var(--muted); font-size: 0.85rem; padding: 0 0 32px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Dinas Kesehatan Kabupaten Bantul</p>
+      <h1>Pelatihan Analisis dan Visualisasi Data Surveilans dengan Tableau Public</h1>
+      <p>Studi kasus campak Kabupaten Bantul 2026, dari analisis deskriptif hingga analisis spasial.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <a class="card" href="01_Panduan_Akun_Tableau_Public.html">
+          <span class="num">1</span>
+          <h2>Panduan Pembuatan Akun</h2>
+          <p>Langkah mendaftar Tableau Public, verifikasi email, pengaturan privasi, dan uji coba Web Authoring.</p>
+          <span class="btn">Buka panduan</span>
+        </a>
+
+        <a class="card" href="02_Modul_Analisis_Visualisasi_Tableau.html">
+          <span class="num">2</span>
+          <h2>Modul Pelatihan</h2>
+          <p>Lima sesi bergambar: etika data, kualitas data, analisis orang, waktu, tempat, peta tematik, dan dasbor.</p>
+          <span class="btn">Buka modul</span>
+        </a>
+
+        <a class="card data" href="https://drive.google.com/drive/folders/1O7o7B9uD7ThRruDFWCX3vI5xsHNWIXK6?usp=sharing" target="_blank" rel="noopener">
+          <span class="num">&#8595;</span>
+          <h2>Data Latihan</h2>
+          <p>Folder Google Drive berisi data kasus campak anonim (.xlsx) dan peta desa Bantul (.geojson).</p>
+          <span class="btn">Buka Google Drive</span>
+        </a>
+      </div>
+
+      <div class="note">
+        <strong>Ingat:</strong> semua yang dipublikasikan di Tableau Public dapat dilihat siapa saja. Gunakan hanya data latihan yang sudah dianonimkan, dan matikan izin unduh pada setiap visualisasi.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">Disusun oleh Ahmad W Maula, Departemen Biostatistik, Epidemiologi, dan Kesehatan Populasi, FKKMK UGM.</div>
+  </footer>
+</body>
+</html>
